@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Convert</title>
+    <link rel="stylesheet" href="/static/css/global.css" />
+  </head>
+  <body>
+    <div class="navigation-wrapper">
+      <a href="/" class="active">Convert Score</a>
+      <a href="/square">Square Root</a>
+      <a href="/hypotenuse">Hypotenuse</a>
+    </div>
+
+    <div class="body-wrapper">
+      <div class="result-wrapper">
+        <h1 id="result-h1"></h1>
+        <p id="result-p"></p>
+      </div>
+
+      <div class="input-wrapper">
+        <p class="input-title">Score Number</p>
+        <p class="input-subtitle">
+          Input your score number, hit enter and it will automatically convert
+          into letter.
+        </p>
+        <div class="input-field">
+          <input type="number" id="input" onkeydown="hitEnter(event)" />
+          <button id="input-button" onclick="convertScore()">Convert</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/static/js/index.js"></script>
+  </body>
+</html>
